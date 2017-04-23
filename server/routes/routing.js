@@ -14,8 +14,11 @@ import User from '../controller/user';
  */
 const userRoutes = [
     {method : "post", url: "/signup", auth: "open", action: User.create},
-    {method : "get", url: "/signin", auth: "open", action: User.signin},
-    {method : "post", url: "/forgotPassword", auth: "open", action: User.forgotPassword}
+    {method : "post", url: "/signin", auth: "open", action: User.signin},
+    {method : "post", url: "/forgotPassword", auth: "open", action: User.forgotPassword},
+    {method : "post", url: "/verifyotp", auth: "open", action: User.verifyOTP},
+    {method : "post", url: "/resetPassword", auth: "open", action: User.resetPassword},
+    {method : "post", url: "/update", action: User.update}
 ];
 
 /**

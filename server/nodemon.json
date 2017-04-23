@@ -1,4 +1,4 @@
 {
-    "exec" : "npm start",
+    "exec" : "gulp && npm start",
     "ignore" : ["node_modules","public", "bin", "dist"]
 }

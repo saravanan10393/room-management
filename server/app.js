@@ -18,6 +18,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// cors setup
+app.use(require("cors")());
 
 require('./routes/index').default(app);
 // catch 404 and forward to error handler
